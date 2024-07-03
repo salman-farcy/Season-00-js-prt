@@ -77,7 +77,104 @@
 
 
 //! while loop
+// let salman = "farcy"
 
-while(){
+// while(salman = "rohim hoy"){
+//      console.log("rohim is salman broyher");
+     
+// }
 
+// console.log(salman);
+
+
+
+
+//* JavaScript Coloser
+
+// function outer(){
+//      console.log("outer");
+//      function inner(){
+//           console.log("inner");
+//      }
+// }
+// outer(); //? "outer"
+
+
+// function outer(){
+//      console.log("outer");
+//      function inner(){
+//           console.log("inner");
+//      }
+//      inner();
+// }
+// outer() //? "outer"  "inner"
+
+
+
+// function outer(){
+//      console.log("outer");
+//      return function inner(){
+//           console.log("inner");
+//      };
+// }
+// console.log(outer()); //?"outer", [function: inner]
+
+
+
+
+// function outer(){
+//      console.log("outer");
+//      return function inner(){
+//           console.log("inner");
+//      };
+// }
+
+// const z = outer(); //?"Outer"
+// z(); //? "inner"
+
+
+// function outer(){
+//      console.log("Outer");
+//      return function inner(){
+//           console.log("inner");
+//      };
+// }
+
+// outer()(); //?"Outer", "inner"
+
+
+
+// function o(){
+//      function m(){
+//           function i(){
+//                function j(){
+//                     console.log("Jre");
+                    
+//                }
+//                j();
+//           }
+//           i();
+//      }
+//      m();
+// }
+// o(); //? "Jre"
+
+
+function o(){
+     function m(){
+          function i(){
+               function j(){
+                    console.log("Jre");
+                    let car = "Bmw";
+               }
+               j();
+
+               console.log(car = "bick");
+          }
+          i();
+     }
+     m();
 }
+o(); //? "Jre"
+
+
