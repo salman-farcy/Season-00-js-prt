@@ -32,7 +32,7 @@
 //      return function(){
 //           var y = 20;
 //           console.log("sum :"+ (x + y) );
-          
+
 //      }
 // }
 // closuresDeamo()();
@@ -81,7 +81,7 @@
 
 // while(salman = "rohim hoy"){
 //      console.log("rohim is salman broyher");
-     
+
 // }
 
 // console.log(salman);
@@ -149,7 +149,7 @@
 //           function i(){
 //                function j(){
 //                     console.log("Jre");
-                    
+
 //                }
 //                j();
 //           }
@@ -160,21 +160,82 @@
 // o(); //? "Jre"
 
 
-function o(){
-     function m(){
-          function i(){
-               function j(){
-                    console.log("Jre");
-                    let car = "Bmw";
-               }
-               j();
+// function o(){
+//      function m(){
+//           function i(){
+//                function j(){
+//                     console.log("Jre");
+//                     let car = "Bmw";
+//                }
+//                j();
 
-               console.log(car = "bick");
-          }
-          i();
-     }
-     m();
-}
-o(); //? "Jre"
+//                console.log(car = "bick");
+//           }
+//           i();
+//      }
+//      m();
+// }
+// o(); //? "Jre"
+
+
+// function outer(x){
+//      function inner(y){
+//           if(x > 1){
+//                console.log(y);
+//           }
+//           else{
+//                console.log(y * 2);
+
+//           }
+//      }
+//      inner(6)
+// }
+// outer(0) //? 12
+
+
+// function counter () {
+//      let count = 0;
+
+//      return {
+//           incriment: function(){
+//                          count++;
+//                          console.log(count);
+//                     },
+//           decrement: function(){
+//                          count--;
+//                          console.log(count);
+
+//                     }
+//      }
+// }
+
+// const myCounter = counter();
+// myCounter.incriment()
+// myCounter.incriment()
+// myCounter.incriment()
+// myCounter.decrement() 
+
+
+
+// function counter() {
+//      let count = 0;
+
+//      return {
+//           incriment: function () {
+//                count++;
+//                console.log(count);
+//           },
+//           decrement: function () {
+//                count--;
+//                console.log(count);
+
+//           }
+//      }
+// }
+
+// const myCounter = counter();
+// console.log(myCounter);
+
+
 
 
