@@ -239,3 +239,22 @@
 
 
 
+//* Coloser Practice
+
+// function outer(){
+//      var x = 10;
+//      function inner(){
+//           console.log(x);
+//      }
+//      x = 30;
+//      return inner;
+// }
+// var innerFunc = outer();
+// innerFunc() //? 30
+
+
+(function outer(a){
+     return (function inner(y){
+          console.log(a);
+     })(109)
+})(100)
