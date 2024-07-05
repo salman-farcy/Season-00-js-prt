@@ -1,6 +1,4 @@
 
-
-
 // const message = " I can do it";
 
 // function sum(a, b){
@@ -23,7 +21,6 @@
 // }
 
 // getResult(5, 7);
-
 
 
 // function closuresDeamo() {
@@ -253,8 +250,70 @@
 // innerFunc() //? 30
 
 
-(function outer(a){
-     return (function inner(y){
-          console.log(a);
-     })(109)
-})(100)
+// (function outer(a){
+//      return (function inner(y){
+//           console.log(a);
+//      })(109)
+// })(100)
+
+
+
+// let count = 0;
+// (function logCount(){
+//      if(count === 0){
+//           let count = 1;
+//           console.log(count);
+//      }
+//      console.log(count);
+
+// })();
+
+
+
+// for(var i = 0; i < 5; i++){
+//      setTimeout(function(){
+//           console.log(i);
+
+//      }, 1000);
+// }
+
+
+// for (var i = 0; i < 5; i++) {
+//      (function(j) {
+//           setTimeout(function () {
+//                console.log(j);
+     
+//           }, 1000);
+//      })(i);
+// }
+
+
+// for(let i = 0; i < 5; i++){
+//      setTimeout(function(){
+//           console.log(i);
+
+//      }, 1000);
+// }
+
+
+//*JavaScript Hoisting
+
+// console.log("name is", name);
+// var name;
+// name = "tom";
+// console.log("name is ", name);
+
+
+//* Hoisting in javaScript
+
+// test();
+// var test = function(){
+//      console.log('I am being tested');
+//  }
+
+
+//  console.log(x); // আউটপুট: আনডিফাইন্ড (ভেরিয়েবল হয়েস্টিং)
+// var x = 5;
+
+// console.log(y); // ReferenceError: Cannot access 'y' before initialization(letহয়েস্টিং না)
+// let y = 10;
