@@ -282,7 +282,7 @@
 //      (function(j) {
 //           setTimeout(function () {
 //                console.log(j);
-     
+
 //           }, 1000);
 //      })(i);
 // }
@@ -317,3 +317,142 @@
 
 // console.log(y); // ReferenceError: Cannot access 'y' before initialization(letহয়েস্টিং না)
 // let y = 10;
+
+
+//* Scope in JavaScript
+
+//?Global Scope
+
+// var golobalVariable = "this is a golobal variable";
+// function doSomet() {
+//      console.log(golobalVariable);
+// }
+// doSomet()
+
+
+// function doSomthing(){
+//      var count = 10;
+//      console.log(count);
+// }
+// doSomthing()
+
+// console.log(count);
+
+
+//? variable shadwoing
+
+// let greeting = "hello";
+// function showGreetiing(){
+//      let greeting = "salman";
+//      console.log(greeting);
+
+// }
+
+// showGreetiing() 
+
+
+
+// let count = 10;
+
+// function outer(){
+//      let count = 20;
+//      function inner(){
+//           let count = 30;
+//           console.log(count);
+//      }
+
+//      inner();
+//      console.log(count);
+// }
+
+// outer();
+// console.log(count);
+
+
+// function factorial(num) {
+//      if (num === 0 || num === 1) {
+//           return 1;
+//      }
+
+//      const refact = num * factorial(num - 1);
+
+//      return refact;
+//  }
+//  console.log(factorial(10));
+
+
+//* this in javaScript
+
+// const person = {
+//      name: "John",
+//      greet: function(){
+//           console.log(`Hello, my name is ${this.name}`);
+          
+//      }
+// }
+
+// person.greet()
+
+// function greet() {
+
+//   console.log(`Hello, my name is ${this.name}`);
+// }
+
+// const person = {
+//   name: 'John'
+// };
+
+// greet(); // Output: Hello, my name is undefined
+// const person = {
+//   name: 'John',
+//   greet: () => {
+//     console.log(`Hello, my name is ${name}`);
+//   }
+// };
+
+// person.greet(); // Output: Hello, my name is undefined
+
+
+// function greet() {
+//   console.log(this); // Window/global object
+// }
+
+// greet();
+
+
+// const person = {
+//   name: 'John',
+//   greet: function() {
+//     console.log(this); // person object
+//   }
+// };
+
+// person.greet();
+
+
+// function Person(name) {
+//   this.name = name;
+//   console.log(this); // New Person object
+// }
+
+// const john = new Person('John');
+
+
+ 
+
+function Car(model, year) {
+     // 'this' নতুনভাবে তৈরি হওয়া অবজেক্টের দিকে নির্দেশ করে
+     this.model = model;
+     this.year = year;
+ 
+     // মেথড যোগ করা
+     this.getDetails = function() {
+         return this.model + ' - ' + this.year;
+     };
+ }
+ 
+ const car1 = new Car('Toyota', 2021);
+ const car2 = new Car('Honda', 2020);
+ 
+ console.log(car1); // Toyota - 2021
+ console.log(car2.getDetails()); // Honda - 2020
