@@ -440,19 +440,69 @@
 
  
 
-function Car(model, year) {
-     // 'this' নতুনভাবে তৈরি হওয়া অবজেক্টের দিকে নির্দেশ করে
-     this.model = model;
-     this.year = year;
+// function Car(model, year) {
+//      // 'this' নতুনভাবে তৈরি হওয়া অবজেক্টের দিকে নির্দেশ করে
+//      this.model = model;
+//      this.year = year;
  
-     // মেথড যোগ করা
-     this.getDetails = function() {
-         return this.model + ' - ' + this.year;
-     };
- }
+//      // মেথড যোগ করা
+//      this.getDetails = function() {
+//          return this.model + ' - ' + this.year;
+//      };
+//  }
  
- const car1 = new Car('Toyota', 2021);
- const car2 = new Car('Honda', 2020);
+//  const car1 = new Car('Toyota', 2021);
+//  const car2 = new Car('Honda', 2020);
  
- console.log(car1); // Toyota - 2021
- console.log(car2.getDetails()); // Honda - 2020
+//  console.log(car1); // Toyota - 2021
+//  console.log(car2.getDetails()); // Honda - 2020
+
+
+
+
+ 
+//* this in  javaScript
+
+//implicit binding
+//explicit binding
+//new binding
+//window binding
+
+
+
+//?implicit binding
+
+var sakib = {
+     name: "sakib",
+     age: 35,
+     printPlayerName: function(name){
+          console.log(this.name);
+          
+     }
+}
+
+sakib.printPlayerName()
+
+var printPlayerNameFunction = function(obj){
+     obj.printPlayerName = function(){
+          console.log(this.name);
+          
+     }
+}
+
+var sakib = {
+     name: 'sakib',
+     age: 35,
+}
+
+var tamim = {
+     name: 'tamim',
+     age: 35,
+}
+
+printPlayerNameFunction(tamim)
+printPlayerNameFunction(sakib)
+
+
+sakib.printPlayerName()
+tamim.printPlayerName()
