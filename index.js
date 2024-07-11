@@ -472,37 +472,83 @@
 
 //?implicit binding
 
-var sakib = {
-     name: "sakib",
-     age: 35,
-     printPlayerName: function(name){
-          console.log(this.name);
+// var sakib = {
+//      name: "sakib",
+//      age: 35,
+//      printPlayerName: function(name){
+//           console.log(this.name);
           
-     }
-}
+//      }
+// }
 
-sakib.printPlayerName()
+// sakib.printPlayerName()
 
-var printPlayerNameFunction = function(obj){
-     obj.printPlayerName = function(){
-          console.log(this.name);
+// var printPlayerNameFunction = function(obj){
+//      obj.printPlayerName = function(){
+//           console.log(this.name);
           
-     }
-}
+//      }
+// }
 
-var sakib = {
-     name: 'sakib',
-     age: 35,
-}
+// var sakib = {
+//      name: 'sakib',
+//      age: 35,
+// }
 
-var tamim = {
-     name: 'tamim',
-     age: 35,
-}
+// var tamim = {
+//      name: 'tamim',
+//      age: 35,
+// }
 
-printPlayerNameFunction(tamim)
-printPlayerNameFunction(sakib)
+// printPlayerNameFunction(tamim)
+// printPlayerNameFunction(sakib)
 
 
-sakib.printPlayerName()
-tamim.printPlayerName()
+// sakib.printPlayerName()
+// tamim.printPlayerName()
+
+// var Salman = function(name, age){
+//      return {
+//           name: name,
+//           age: age,
+//           printName: function(){
+//                console.log(this.name);
+               
+//           },
+//           father: {
+//                name: "Mr. xxx",
+//                printName: function(){
+//                     console.log(this.name);
+//                }
+//           }
+//      }
+// }
+
+// var sakib = Salman("salman", 23);
+// sakib.father.printName()
+
+
+
+//? Let in js
+
+// let salman = "salmna";
+// console.log(salman)
+
+
+//?javaScript data types
+
+// let firstName = "Ali";
+// console.log("I am a salmon salman Firstly hi I'm Salman Khreste");
+
+
+
+
+
+// let student = {
+//     fulNmae: "Ali Hossain",
+//     age: 32,
+//     dateOFBirth: 19923,
+    
+// }
+// console.log(student)
+// console.log(typeof student)
