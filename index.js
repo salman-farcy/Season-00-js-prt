@@ -552,3 +552,9 @@
 // }
 // console.log(student)
 // console.log(typeof student)
+
+
+//Exponentiation (পাওয়ার অপারেশন) (**)
+let num1 = 4
+let num2 = 2
+console.log(num1 ** num2)
